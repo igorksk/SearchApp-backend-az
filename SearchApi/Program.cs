@@ -33,7 +33,7 @@ namespace SearchApi
                 options.AddPolicy("MyCorsPolicy", builder =>
                 {
                     builder.WithOrigins("http://localhost:3000", 
-                        "https://victorious-beach-02460390f.2.azurestaticapps.net/") // Replace with your allowed origins
+                        "https://victorious-beach-02460390f.2.azurestaticapps.net") // Replace with your allowed origins
                            .AllowAnyMethod()
                            .AllowAnyHeader();
                 });
