@@ -32,7 +32,7 @@ namespace SearchApi
             {
                 options.AddPolicy("MyCorsPolicy", builder =>
                 {
-                    builder.WithOrigins("http://localhost:3000") // Replace with your allowed origins
+                    builder.WithOrigins("https://search-app-frontend-cvfsgga2hxcahbck.canadacentral-01.azurewebsites.net/") 
                            .AllowAnyMethod()
                            .AllowAnyHeader();
                 });
