@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SearchApi.Dtos;
+﻿using SearchApi.Dtos;
 using SearchApi.Services;
 
 namespace SearchApi.Endpoints
