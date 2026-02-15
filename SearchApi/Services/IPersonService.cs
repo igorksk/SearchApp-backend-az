@@ -11,5 +11,6 @@ namespace SearchApi.Services
         Task<PersonDto> AddPerson(PersonDto personDto);
 
         Task<bool> RemovePerson(int id);
+        Task Reset();
     }
 }

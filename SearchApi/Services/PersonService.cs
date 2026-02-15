@@ -35,6 +35,11 @@ namespace SearchApi.Services
             return await _repo.RemovePerson(id);
         }
 
+        public async Task Reset()
+        {
+            await _repo.Reset();
+        }
+
         private IEnumerable<PersonDto> ConvertToPersonDtos(IEnumerable<Person> people)
         {
             return _mapper.Map<IEnumerable<PersonDto>>(people);

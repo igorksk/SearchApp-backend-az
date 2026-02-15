@@ -8,5 +8,6 @@ namespace SearchApi.Repository
         Task<IEnumerable<Person>> GetAllPeople();
         Task<Person> AddPerson(Person person);
         Task<bool> RemovePerson(int id);
+        Task Reset();
     }
 }

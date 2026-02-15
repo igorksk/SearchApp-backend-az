@@ -32,6 +32,12 @@ namespace SearchApi.Endpoints
                     return Results.NotFound();
                 return Results.NoContent();
             });
+
+            app.MapPost("/api/reset", async (IPersonService service) =>
+            {
+                await service.Reset();
+                return Results.Ok();
+            });
         }
     }
 }

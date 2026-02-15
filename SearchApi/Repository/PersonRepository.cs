@@ -43,5 +43,14 @@ namespace SearchApi.Repository
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task Reset()
+        {
+            _context.People.RemoveRange(_context.People);
+            await _context.SaveChangesAsync();
+
+            var seeder = new PeopleDataSeeder(_context);
+            seeder.Seed();
+        }
     }
 }
